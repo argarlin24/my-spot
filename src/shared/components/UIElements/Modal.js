@@ -13,7 +13,7 @@ const ModalOverlay = props => {
             </header>
             <form onSubmit={
                 props.onSubmit ? props.onSubmit : event => {
-                    event.preventDefault()
+                    return event.preventDefault();
                 }
             }
             >
