@@ -10,9 +10,9 @@ const DUMMY_PLACES = [
         description: 'One of the tallest buildings in the world',
         imageUrl: 'https://via.placeholder.com/500',
         address: '20 W 34th St, New York, NY 1001',
-        loaction: {
+        location: {
             lat: 40.7484405,
-            long: -73.98785884,
+            lng: -73.98785884,
         },
         creator: 'u1'
     },
@@ -22,9 +22,9 @@ const DUMMY_PLACES = [
         description: 'One of the tallest buildings in the world',
         imageUrl: 'https://via.placeholder.com/500',
         address: '20 W 34th St, New York, NY 1001',
-        loaction: {
+        location: {
             lat: 40.7484405,
-            long: -73.98785884,
+            lng: -73.98785884,
         },
         creator: 'u2'
     }
