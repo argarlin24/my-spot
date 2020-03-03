@@ -1,9 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import Input from '../../shared/components/FormElements/Button';
+import Input from '../../shared/components/FormElements/Input';
 import Button from '../../shared/components/FormElements/Button';
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from '../../shared/util/validators'; 
+
+import './PlaceForm.css';
 
 
 const DUMMY_PLACES = [
@@ -34,10 +36,10 @@ const DUMMY_PLACES = [
 ]
 
 const UpdatePlace = () => {
-    const placeId = useParams().place.Id;
+    const placeId = useParams().placeId;
 
     const identifiedPlace = DUMMY_PLACES.find(p => p.id === placeId);
-
+    console.log(identifiedPlace.title);
     if(!identifiedPlace) {
         return(
             <h2>Could not find place...</h2>
@@ -45,7 +47,7 @@ const UpdatePlace = () => {
     }
 
     return (
-        <form>
+        <form className="place-form">
             <Input 
               id="title" 
               element="input" 
